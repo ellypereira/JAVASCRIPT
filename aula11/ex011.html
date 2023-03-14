@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacional</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background-color: rgba(0, 255, 255, 0.438);
+        }
+        input{
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    Seu país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+       function verificar() {
+        var txtp = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        res.innerHTML = `Tu mora em ${txtpais.value}.`
+        if (txtpais.value == 'Brasil'){ 
+        res.innerHTML += `Tu é Brasileiro!`    
+        }
+        if (txtpais.value == 'EUA'){ 
+        res.innerHTML += `Tu é Estrangeiro!`    
+        }
+    
+       }
+    </script>
+</body>
+</html>
