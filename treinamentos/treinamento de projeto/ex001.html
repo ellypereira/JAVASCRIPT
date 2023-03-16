@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade (anime)</title>
+    <style>
+        body{
+            background-color: #3e1c33;
+            font: Normal 15pt Times, 'Times New Roman', serif;
+        }
+        header{
+            color: #fff;
+            text-align: center;
+        }
+        article{
+            background-color: #d3b390;
+            border-radius: 17px;
+            padding: 23px;
+            width: 456px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411) ;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+            padding: 35px;
+         
+        }
+    </style>
+</head>
+<body>
+    <header> <h1>Verificador de Idade</h1> </header>
+    <article>
+        <div>
+            <p>Ano do Nascimento</p>
+            <input type="number" name="txtano" id="txtano" min="0">
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+            <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados para obter o resultado!
+        </div>
+    </article>
+    <footer>ºGrazzielly Pereira</footer>
+    <script src="script.js"></script>
+</body>
+</html>
