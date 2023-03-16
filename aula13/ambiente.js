@@ -1,7 +1,8 @@
 /*var c = 1
 while( c <= 5) {
     console.log(`Passo ${c}`)
-    c++ // c = c + 1 
+    c++ // basicamente o c++ começa a valer 2 
+     c = c + 1 
 } */
 
 
