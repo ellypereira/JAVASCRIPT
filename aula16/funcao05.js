@@ -8,3 +8,4 @@ function fatorial(n) {
 }
 console.log(fatorial(5))
 
+//ESTUDAR BASTANTE FUNÇÃO, POIS ISSO FOI SO O BÁSICO!!!
