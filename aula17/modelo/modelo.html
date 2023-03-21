@@ -9,21 +9,26 @@
 </head>
 <body>
     <header>
-        <h1>Analisador de Números</h1></header>
-
+        <h1>
+            Analisador de Dados
+        </h1>
+    </header>
     <section>
-
-    <div id="number">
-    <p>Número (entre 1 e 100) <input type="number" name="fnum" id="fnum">
-    <input type="button" value="adicionar" onclick="adicionar()">
-    <br><Select name="flista" id="flista" size="6"></Select>
-    <br><input type="button" value="finalizar">
-    </div>
-
-    <div id="res"></div>
+        <div>
+            número (entre 1 a 100): <input type="number" id="numero">
+            <input type="button" value="adicionar" onclick="add_numero()">
+            <p>
+                <textarea id="tabela" rows="7"></textarea> 
+            </p>
+            <input type="button" value="finalizar" onclick="finalizar()">
+        </div>
+        <div>
+            <p id="resultado"></p>
+        </div>
     </section>
-    
-    <footer><p>&copy;Grazzielly Pereira</p></footer>
+    <footer>
+        <p>&copy; L Corporation</p>
+    </footer> 
     
     <script src="script.js"></script>
 </body>
