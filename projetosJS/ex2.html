@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito sonoro ao clicar em botão</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            font-family: arial;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Clique no botão e ouça o som</h1>
+    <button onclick="tocarSom()">Clique aqui</button>
+    <audio id="somClick" src="https://www.youtube.com/watch?v=y6lfK3bH4z8"></audio>
+    
+    <script>
+        function tocarSom(){
+            const som = document.getElementById("somClick");
+            som,currentTime = 0; // volta ao início se clicar várias vezes
+            som.play();
+        }
+    </script>
+</body>
+</html>
